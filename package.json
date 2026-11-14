@@ -1,0 +1,49 @@
+{
+  "author": "[YOUR_NAME]",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackeg/fse-idempotent-guard.git"
+  },
+  "name": "fse-idempotent-guard",
+  "version": "0.1.0",
+  "description": "Zero-dependency idempotency key lock and response deduplicator for Node, Edge, and serverless APIs.",
+  "keywords": [
+    "idempotency",
+    "idempotent",
+    "api",
+    "middleware",
+    "lock",
+    "dedupe"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup && tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@typescript/typescript6": "^6.0.2",
+    "tsup": "^9.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}
