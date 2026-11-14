@@ -5,7 +5,7 @@
     "url": "git+https://github.com/fullstackeg/fse-idempotent-guard.git"
   },
   "name": "fse-idempotent-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-dependency idempotency key lock and response deduplicator for Node, Edge, and serverless APIs.",
   "keywords": [
     "idempotency",
